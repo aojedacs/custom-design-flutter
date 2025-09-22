@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'main_screen.dart';
 
@@ -11,6 +10,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const WidgetsApp(color: Color(0xFFFFFFFF), home: MainScreen());
+    return MaterialApp(
+      home: MainScreen(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
