@@ -12,7 +12,7 @@ class MainScreen extends StatelessWidget {
         child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        CustomInput(text: "Ingrese texto", controller: TextEditingController(), isPassword:true),
+        CustomInput(text: "Ingrese texto", controller: TextEditingController(), label: "Contraseña", isPassword: true,),
         CustomButton(
           texto: "Ir a nueva pantalla",
           onPressed: () {
